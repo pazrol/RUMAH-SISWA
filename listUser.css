@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.container {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+.table th,
+.table td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: plum;
+}
+
+/* Form Styles */
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+/* Alert Styles */
+.alert {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-warning {
+  background-color: #fff3cd; /* yellow */
+  color: #856404; /* dark yellow */
+  border-color: #ffeeba; /* lighter yellow */
+}
+
+.fa-solid.fa-pen-to-square.fs-5.me-3 {
+  color: black;
+}
+
+.fa-solid.fa-trash.fs-5 {
+  color: black;
+}
+
+/* Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-buttons {
+  margin-top: 20px;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-buttons button.primary {
+  background-color: black;
+  color: #fff;
+}
+
+.popup-buttons button.primary:hover {
+  background-color: plum;
+  color: black;
+}
+
+.popup-buttons button.secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.popup-buttons button.secondary:hover {
+  background-color: plum;
+  color: black;
+}

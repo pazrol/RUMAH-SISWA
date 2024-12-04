@@ -1,0 +1,73 @@
+/* Custom styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container h4 {
+  font-size: larger;
+  margin-left: 2%;
+  padding: 10px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.card {
+  background-color: eee;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+}
+
+.btn {
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: plum;
+}
+
+.message {
+  background-color: plum;
+  color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #dc3545;
+}

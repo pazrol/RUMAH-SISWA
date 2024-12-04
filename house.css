@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*--Container Gap--*/
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/*--Text Subheading--*/
+.section__header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.popular__grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.house_card {
+  width: 480px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+.house_card:hover {
+  box-shadow: plum;
+}
+
+.house_card.img {
+  width: auto; /* Adjust to fit the container */
+  height: auto; /* Adjust the height as needed */
+}
+
+.popular__content {
+  padding: 20px;
+  flex: 1; /* Take remaining space */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+}
+
+.popular__card__header h3 {
+  font-size: 20px;
+}
+
+.popular__card__header h4 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.popular__content p {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.more_btn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.more_btn:hover {
+  background-color: plum;
+}

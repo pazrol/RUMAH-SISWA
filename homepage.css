@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*--------home---------*/
+.home {
+  height: 100vh;
+  color: #fff;
+}
+
+.home img {
+  width: 100%;
+  height: 100vh;
+}
+
+.home .text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.home .text h1 {
+  font-size: 80px;
+  font-family: serif;
+  font-weight: 400;
+}
+
+.home p {
+  margin: 20px 0;
+}
+
+.home button {
+  margin-right: 20px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+}
+
+.owl-nav .owl-prev {
+  left: 0;
+}
+
+.owl-nav .owl-next {
+  right: 0;
+}
+
+/*--------home---------*/
+
+/*--------rent---------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.book {
+  padding: 40px 0;
+  background: rgb(72, 72, 72);
+  color: #fff;
+  text-align: center;
+}
+
+.book .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.book .text {
+  margin-right: 30px;
+}
+
+h1 {
+  font-family: serif;
+}
+
+.book h1 {
+  font-size: 30px;
+}
+
+.book h1 span {
+  color: plum;
+}
+
+.book input {
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.book input:hover {
+  background: plum;
+}
+
+.book button {
+  padding: 20px 40px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 300px;
+  transition: background-color 0.3s ease;
+}
+
+.book button:hover {
+  background-color: plum; /* Darker shade of plum */
+}
+
+/*--------end of rent---------*/
+
+/* Custom styling for select dropdown */
+select {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+  border: 1px solid #555;
+  cursor: pointer;
+  width: 200px; /* Adjusted width */
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+/* Styling for dropdown arrow */
+select::after {
+  content: "\25BC"; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Hover effect for dropdown */
+select:hover {
+  background-color: #444;
+}
+
+/* Focus effect for dropdown */
+select:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+/* Option styling */
+option {
+  background-color: #333;
+  color: #fff;
+}

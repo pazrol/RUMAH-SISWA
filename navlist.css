@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 120px;
+  z-index: 1000;
+  margin-top: -5px;
+}
+
+.dropdown li {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 20px;
+}
+
+/* End of Dropdown styles */
+
+/* Buttons styles */
+.dropdown-content button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+/* End of Dropdown styles */
+
+/*--Nav--*/
+h1,
+h2 {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.logo > img {
+  max-width: 200px;
+  height: 65px;
+  margin-left: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  background: black;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+}
+
+.primary-btn:hover {
+  background: plum;
+}
+
+.secondary-btn {
+  padding: 15px 40px;
+  background: none;
+  border: 2px solid white;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+/*---end of nav---*/
+
+/*-----Header-----*/
+header {
+  height: 11vh;
+  line-height: 10vh;
+  padding: 5px 25px;
+  background-color: gainsboro;
+}
+
+header img {
+  margin: 6px 0;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  height: 10%;
+}
+
+header ul li a {
+  color: #000;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: plum;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header button {
+  padding: 13px 40px;
+}
+
+header .navlinks span {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: plum;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 9;
+  }
+
+  header ul li {
+    display: block;
+  }
+
+  header ul li a {
+    color: white;
+  }
+
+  header i {
+    color: white;
+  }
+
+  header .navlinks span {
+    color: black;
+    display: block;
+    cursor: pointer;
+    line-height: 10vh;
+    font-size: 25px;
+  }
+}
+
+/*--------end of header---------*/
